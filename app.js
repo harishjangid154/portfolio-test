@@ -13,6 +13,11 @@ const image = document.querySelector('.image img');
 const desc = document.querySelector('.info h3')
 const circle = document.querySelector('.circle');
 
+
+
+
+
+
 //animation event
 
 container.addEventListener('mousemove', (e) => {

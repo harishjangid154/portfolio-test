@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .intro__slide {
+      min-height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: black;
+      position: fixed;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .intro {
+      color: rgb(238, 221, 221);
+      font-size: 3rem;
+      z-index: 3;
+    }
+
+    .slider {
+      min-height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgb(78, 81, 112);
+      position: fixed;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-100%);
+    }
+
+    .hide {
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .hide span {
+      transform: translateY(100%);
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <!-- nav links -->
+    <div class="intro__slide">
+      <!-- Intro or welcome slide -->
+      <div class="intro">
+        <h2 style="text-decoration: underline" class="hide">
+          <span class="text">Hey You</span>
+        </h2>
+        <h2 style="text-decoration: underline" class="hide">
+          <span class="text">Welcome To My</span>
+        </h2>
+        <h2 style="text-decoration: underline" class="hide">
+          <span class="text">World .</span>
+        </h2>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app-test.js"></script>
+  </body>
+</html>
