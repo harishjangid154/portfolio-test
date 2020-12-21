@@ -13,6 +13,8 @@ const image = document.querySelector('.image img');
 const desc = document.querySelector('.info h3')
 const circle = document.querySelector('.circle');
 
+const socialBtnUl = document.querySelector('.social-btn')
+const socialBtn = document.querySelectorAll('.social-btn a');
 
 
 
@@ -55,3 +57,19 @@ container.addEventListener('mouseleave', e =>{
 
 
 //item out
+
+
+//add classes to social media buttons about section
+
+socialBtnUl.addEventListener('mouseover', (e)=>{
+    for(let i = 0; i < socialBtn.length; i++){
+        socialBtn[i].classList.add("box-shadow-out");
+    }
+});
+
+// delete class from social media buttons
+socialBtnUl.addEventListener('mouseleave', (e)=>{
+    for(let i = 0; i < socialBtn.length; i++){
+        socialBtn[i].classList.remove("box-shadow-out");
+    }
+});

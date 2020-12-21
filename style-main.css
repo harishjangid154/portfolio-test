@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: none;
+  }
+  
+  body {
+    /* font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    min-height: 100vh;
+  }
+.primary {
+  color: rgba(46, 45, 6, 0.836);
+}
+
+.size-h1 {
+  font-size: 3vw;
+}
+.size-p {
+  font-size: 5vh;
+}
+.size-heading {
+  font: bold 4vw arial, sans-serif;
+}
+
+.box-shadow-in {
+  box-shadow: 0 0 10px rgb(206, 185, 185) inset;
+}
+.hover-box-shadow-in:hover {
+  box-shadow: 0 0 10px rgb(206, 185, 185) inset;
+}
+
+.box-shadow-out {
+  box-shadow: 0 0 10px rgb(192, 167, 167);
+}
+.hover-box-shadow-out :hover {
+  box-shadow: 0 0 10px rgb(192, 167, 167);
+}
+
+.box-shadow-in-out{
+    box-shadow: 0px 0px 50px rgb(66, 56, 56) inset, 0 0 50px rgb(192, 167, 167);
+}
+.box-shadow-in-out-sp{
+    box-shadow: 20px 20px 100px rgb(185, 161, 161) inset, 2px 10px 50px rgb(146, 134, 134);
+}
+
+.text-shadow-in {
+  background-color: rgb(102, 96, 96);
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(238, 236, 236, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.hover-text-shadow-in:hover {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.text-shadow-out {
+  text-shadow: 0 0 50px rgb(192, 167, 167);
+}
+.hover-text-shadow-out :hover {
+  text-shadow: 0 0 10px rgb(192, 167, 167);
+}
+
+.round-brd {
+  border-radius: 30px;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+}
+.display-flex-sp-bw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-flex-sp-ar {
+  display: flex;
+  justify-content: space-around;
+}
+.display-flex-sp-ev {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.align-item-center {
+  align-items: center;
+}
+.round-btn {
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+}
+
+.color-invert {
+  filter: invert();
+}
+.pop-out {
+  transform: translateZ(100px);
+}
+.hover-pop-out:hover {
+  transform: translateZ(200px);
+}
+
+.show-3d {
+  transform-style: preserve-3d;
+}
+.scale-out {
+  scale: (0.5, 0.5);
+}
+.hover-scale-out:hover {
+  scale: (0.5, 0.5);
+}
+
+
