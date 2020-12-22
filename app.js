@@ -64,6 +64,7 @@ container.addEventListener('mouseleave', e =>{
 socialBtnUl.addEventListener('mouseover', (e)=>{
     for(let i = 0; i < socialBtn.length; i++){
         socialBtn[i].classList.add("box-shadow-out");
+        socialBtn[i].classList.add("scale-out");
     }
 });
 
@@ -71,5 +72,6 @@ socialBtnUl.addEventListener('mouseover', (e)=>{
 socialBtnUl.addEventListener('mouseleave', (e)=>{
     for(let i = 0; i < socialBtn.length; i++){
         socialBtn[i].classList.remove("box-shadow-out");
+        socialBtn[i].classList.remove("scale-out");
     }
 });
