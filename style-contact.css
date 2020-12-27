@@ -1,0 +1,30 @@
+.contact{
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info,.location{
+
+    width: 40%;
+    margin: 2vh;
+    padding: 2vh;
+    box-shadow: 02px 02px 10px rgb(60, 60, 63);
+    border-radius: 10px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 8vh;
+    word-break:break-all;
+}
+
+.contact-info > a{
+    text-decoration: none;
+    color: black;
+}
+

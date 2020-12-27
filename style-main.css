@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: none;
+
+  
 }
 
 body {
@@ -10,6 +11,13 @@ body {
   min-height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  background-image: linear-gradient(to right , rgb(221, 225, 233),rgba(236, 229, 229, 0.438)) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.li-back{
+  background-image: linear-gradient(to right , rgba(253, 253, 253, 0.486),rgba(0, 0, 0, 0.185)) ;
 }
 
 body::-webkit-scrollbar {
@@ -23,21 +31,21 @@ body::-webkit-scrollbar {
   font-size: 3vw;
 }
 .size-p {
-  font-size: 5vh;
+  font-size: 30px;
 }
 .size-heading {
   font: bold 4vw arial, sans-serif;
 }
 
 .box-shadow-in {
-  box-shadow: 0 0 10px rgb(206, 185, 185) inset;
+  box-shadow: 0 0 10px rgb(245, 243, 243) inset;
 }
 .hover-box-shadow-in:hover {
   box-shadow: 0 0 10px rgb(206, 185, 185) inset;
 }
 
 .box-shadow-out {
-  box-shadow: 0 0 10px rgb(192, 167, 167);
+  box-shadow: 02px 02px 10px rgb(126, 114, 114);
 }
 .hover-box-shadow-out :hover {
   box-shadow: 0 0 10px rgb(192, 167, 167);
@@ -124,4 +132,9 @@ body::-webkit-scrollbar {
 }
 .hover-scale-out:hover {
   scale: (0.5, 0.5);
+}
+
+.footer{
+  width: 100%;
+  margin-top: 100px;
 }

@@ -75,3 +75,29 @@ socialBtnUl.addEventListener('mouseleave', (e)=>{
         socialBtn[i].classList.remove("scale-out");
     }
 });
+
+
+const btns = document.querySelectorAll('.btn_container .btn');
+
+function fun(cNmae){
+    const boxs = document.querySelectorAll('.box-container');
+    console.log(boxs);
+    for(let i = 0;  i < boxs.length; i++){
+        if(boxs[i].classList[0] === cNmae){
+            console.log(boxs[i].classList)
+            btns[i].classList.add('box-shadow-out');
+            boxs[i].style.transform = "translateX(0px)";
+            boxs[i].style.opacity = "1";
+            boxs[i].style.position= "relative";
+            boxs[i].style.display = "grid";
+
+        }
+        else{
+            btns[i].classList.remove('box-shadow-out');
+            boxs[i].style.transform = "translateX(-100px";
+            boxs[i].style.opacity = "0";
+            boxs[i].style.position= "absolute";
+
+        }
+    }
+}
