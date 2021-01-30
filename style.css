@@ -5,14 +5,14 @@
   left: 0;
   background: #d19d9d;
   position: fixed;
-  z-index: 3;
+  z-index: 5;
 }
 
 .intro {
   color: rgb(238, 221, 221);
   background: #d19d9d;
   font-size: 3rem;
-  z-index: 3;
+  z-index: 5;
 }
 
 .slider {
@@ -22,7 +22,7 @@
   left: 0;
   background: linear-gradient(to right, rgb(86, 121, 120), rgb(3, 76, 158));
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   transform: translateX(-100%);
 }
 

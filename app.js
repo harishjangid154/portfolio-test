@@ -119,9 +119,9 @@ const feedbackbtn = document.querySelector(".feedback")
 
 cross.addEventListener("click", () => {
    
-    formContainer.classList.toggle("hide");
+    formContainer.classList.toggle("hideForm");
 });
 
 feedbackbtn.addEventListener("click", () => {
-    formContainer.classList.toggle("hide");
+    formContainer.classList.toggle("hideForm");
 })
