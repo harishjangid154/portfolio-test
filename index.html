@@ -10,12 +10,47 @@
   <link rel="stylesheet" href="style-main.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style-about-skill-ex.css" />
-  <link rel="stylesheet" href="/style-contact.css">
+  <link rel="stylesheet" href="./style-contact.css">
+  <link rel="stylesheet" href="./navbarStyle.css">
+  <link rel="stylesheet" href="./formStyle.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
+
+  <nav>
+      <div class="logo"><img src="./images/icon.jpg" alt="" /></div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about"> About </a></li>
+          <li><a href="#contact"> Contact </a></li>
+        </ul>
+
+        <div class="feedback">
+          <a href="#"> <h1>FeedBack</h1></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="feedback-form hide">
+      <div class="cross"><i class="fa fa-times"></i></div>
+
+      <form action="#">
+
+          <div>
+              <input type="text" name="email" id="email" placeholder="EMAIL">
+              <input type="text" name="name" id="name" placeholder="NAME">
+              <input type="text" name="subject" id="subject" placeholder="TOPIC/SUBJECT">
+          </div>
+          <div>
+              <textarea name="msg" id=msg"" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+              <input type="submit" value="SEND">
+          </div>
+      </form>
+    </div>
+
   <!-- Slider Intro Section -->
   <div class="intro__slide display-flex-center align-item-center">
       <div class="intro">
@@ -56,7 +91,7 @@
 
 
 
-  <div class="section__about ">
+  <div class="section__about" id="about">
     <div class="about__heading">
       <div>
         <h1 class="size-heading text-shadow-in">ABOUT ME</h1>
@@ -67,7 +102,7 @@
     </div>
     <div class="about display-flex-sp-ar ">
       <div class="about__image display-flex-center align-item-center ">
-        <img src="/images/about-image.png" alt="harish" />
+        <img src="./images/about-image.png" alt="harish" />
       </div>
 
       <div class="about__info  primary">
@@ -105,25 +140,7 @@
     </div>
   </div>
 
-  <!-- about skill ex section -->
-  <!-- <div id="skill-ex">
-      <div class="display-flex-sp-ev align-item-center btn-container">
-        <span class="round-brd ex-skill-btn active-btn"><a onclick="fun('education')">Eduacation</a></span>
-        <span class="round-brd ex-skill-btn " ><a  onclick="fun('skills')">Skills</a></span>
-        <span class="round-brd ex-skill-btn "> <a  onclick="fun('experience')">Experience</a></span>
-        <span class="round-brd ex-skill-btn "><a  onclick="fun('projects')">Projects</a></span>
-      </div>
-      <div class="main">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-         
 
-    </div>
-    </div> -->
   <div class="main_wrapper">
     <div class="btn_container">
       <span class="btn box-shadow-out"><a onclick="fun('education')">Eduacation</a></span>
@@ -227,7 +244,7 @@
   </div>
   </div>
 
-  <div>
+  <div id="contact">
     
     <center><h1>Contact Me</h1></center>
   </div>

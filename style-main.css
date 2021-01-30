@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  scroll-behavior: smooth;
   
 }
 
@@ -10,8 +10,8 @@ body {
   /* font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
   min-height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  background-image: linear-gradient(to right , rgb(221, 225, 233),rgba(236, 229, 229, 0.438)) ;
+  scrollbar-width: none; /*Firefox*/
+  background-image: linear-gradient(to right bottom , rgba(187, 175, 175, 0.356),rgb(255, 255, 255)) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

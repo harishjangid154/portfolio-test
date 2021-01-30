@@ -23,23 +23,25 @@ const socialBtn = document.querySelectorAll('.social-btn a');
 //animation event
 
 container.addEventListener('mousemove', (e) => {
-    let xAxis = ((window.innerWidth / 2) - e.pageX) / 25 ;
-    let yAxis = ((window.innerHeight / 2) - e.pageY) / 25;
+    let xAxis = ((window.innerWidth / 2) - e.pageX) /20 ;
+    let yAxis = ((window.innerHeight / 2) - e.pageY)/20;
 
-    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    card.style.transform = `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
 container.addEventListener('mouseenter', e =>{
-    card.style.transition = 'none';
+    
+card.style.transition = 'none';
     title.style.transition = 'none';
     image.style.transition = 'none';
-    desc.style.transition = 'none';
+  desc.style.transition = 'none';
 
     //popout
     title.style.transform = "translateZ(150px)";
     image.style.transform = "translateZ(150px)";
     desc.style.transform = "translateZ(150px)";
     circle.style.transform = "translateZ(100px)";
+
 });
 
 container.addEventListener('mouseleave', e =>{
@@ -101,3 +103,25 @@ function fun(cNmae){
         }
     }
 }
+
+
+
+
+
+//form handling code 
+
+
+const cross = document.querySelector(".cross");
+const formContainer = document.querySelector(".feedback-form")
+
+const feedbackbtn = document.querySelector(".feedback")
+
+
+cross.addEventListener("click", () => {
+   
+    formContainer.classList.toggle("hide");
+});
+
+feedbackbtn.addEventListener("click", () => {
+    formContainer.classList.toggle("hide");
+})

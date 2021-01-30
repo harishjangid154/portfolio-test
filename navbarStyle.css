@@ -1,0 +1,43 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+}
+
+ul {
+  width: 80%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  text-decoration: none;
+  align-items: center;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  margin: 20px 0 0 60px;
+  height: 50px;
+  width: 50px;
+  flex-grow: 1;
+}
+
+.links {
+  width: 30%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+}
