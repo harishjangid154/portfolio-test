@@ -7,7 +7,7 @@ nav {
   z-index: 2;
 }
 
-ul {
+nav ul {
   width: 80%;
   display: flex;
   list-style: none;
