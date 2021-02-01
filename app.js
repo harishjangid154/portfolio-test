@@ -119,9 +119,41 @@ const feedbackbtn = document.querySelector(".feedback")
 
 cross.addEventListener("click", () => {
    
-    formContainer.classList.toggle("hideForm");
+    formContainer.classList.toggle("showForm");
 });
 
 feedbackbtn.addEventListener("click", () => {
-    formContainer.classList.toggle("hideForm");
+    formContainer.classList.toggle("showForm");
+})
+
+
+
+// MOUSE HANDLER
+const mouseCursor = document.querySelector(".mouse__cursor")
+
+window.addEventListener("mousemove", (e) => {
+    mouseCursor.style.opacity = 0.5;
+    const x = e.pageX;
+    const y = e.pageY;
+
+    mouseCursor.style.top = `${y}px`;
+    mouseCursor.style.left = `${x}px`;
+
+})
+
+
+window.addEventListener("mouseout", () => {
+    mouseCursor.style.opacity = 0;
+    
+})
+
+
+// BOX ANIMATION SHOW CASE HANDLER
+window.addEventListener("scroll", () => {
+    const boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => {
+        if (box.getBoundingClientRect().top < window.innerHeight / 2) {
+            box.classList.add("show")
+        }
+    })
 })

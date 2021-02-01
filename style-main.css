@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /*Firefox*/
-  background-image: linear-gradient(to right bottom , rgba(187, 175, 175, 0.356),rgb(255, 255, 255)) ;
+  background-image: linear-gradient(to right bottom , rgb(188, 201, 211),rgb(253, 253, 253)) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -137,4 +137,16 @@ body::-webkit-scrollbar {
 .footer{
   width: 100%;
   margin-top: 100px;
+}
+
+.mouse__cursor {
+  height: 3vh;
+  width: 3vh;
+  background: black;
+  border-radius: 20px;
+  opacity: 0.6;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
 }

@@ -18,6 +18,7 @@
 </head>
 
 <body>
+   <div class="mouse__cursor"></div>
 
   <nav>
       <div class="logo"><img src="./images/icon.jpg" alt="" /></div>
@@ -52,7 +53,7 @@
     </div>
 
   <!-- Slider Intro Section -->
-  <div class="intro__slide display-flex-center align-item-center">
+  <!-- <div class="intro__slide display-flex-center align-item-center">
       <div class="intro">
         <h2 style="text-decoration: underline" class="hide">
           <span class="text">Hey You</span>
@@ -65,7 +66,7 @@
         </h2>
       </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
 
   <!-- Landing page section -->
   <div class="landing__page display-flex-center align-item-center">
@@ -140,42 +141,30 @@
     </div>
   </div>
 
-
-  <div class="main_wrapper">
-    <div class="btn_container">
-      <span class="btn box-shadow-out"><a onclick="fun('education')">Eduacation</a></span>
-      <span class="btn"><a onclick="fun('skills')">Skills</a></span>
-      <span class="btn"><a onclick="fun('projects')">Projects</a< /span>
-    </div>
-
-    <div class="box_wrapper">
-      <div class="education box-container">
-
-        <div class="box">
-          <h2>Graduation</h2>
+  <!-- ShowCase Section -->
+    <div class="box-container" id="education">
+      <div class="box-title">Education</div>
+      <div class="box">
+        <h2>Graduation</h2>
           <h3>In Computer Science</h3>
           <p>From BKIET, Pilani</p>
           <p>Best part of life. Found friends, meaning of life.</p>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="box">
-          <h2>12th standard</h2>
+      </div>
+      <div class="box">
+        <h2>12th standard</h2>
           <h3>In Maths</h3>
           <p>From GOVT. Sen. Sec. School in 2017</p>
           <p>Best year of my school life. Lost , found, forgive.</p>
-        </div>
-        <div class="box">
-          <h2>10th standard</h2>
+      </div>
+      <div class="box">
+        <h2>10th standard</h2>
           <p>From GOVT. Sen. Sec. School in 2015</p>
           <p>A good year with good friends</p>
-        </div>
       </div>
-      <div class="skills box-container">
-        <div>
-
-        </div>
-        <div class="box">
+    </div>
+    <div class="box-container" id="skill">
+      <div class="box-title">Skills</div>
+      <div class="box">
           <h2>Languages:</h2>
           <ul>
             <li>C</li>
@@ -193,8 +182,6 @@
             <li>MongoDB</li>
           </ul>
         </div>
-        <div></div>
-        <div></div>
         <div class="box">
           <h2>Operating Systems</h2>
           <ul>
@@ -203,19 +190,9 @@
             <li>RedHat</li>
           </ul>
         </div>
-
-        <div class="box">
-          <h2>Tech</h2>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Containers</li>
-            <li>Web Development</li>
-            <li>Virtual Reality</li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <div class="projects box-container">
+    <div class="box-container" id="project">
+      <div class="box-title">Projects</div>
       <div class="box">
         <a href="https://harishjangid154.github.io/sorting-visualizer/" target="_blank">
           <h1>Sorting Visualiser</h1>
@@ -241,8 +218,7 @@
         <h3>This is only a basic project using React. You can Generator rundom numbers as many you want.</p>
       </div>
     </div>
-  </div>
-  </div>
+  
 
   <div id="contact">
     
